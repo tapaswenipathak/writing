@@ -1,0 +1,36 @@
+{
+  "name": "ecs-cluster-control",
+  "version": "1.0.0",
+  "description": "Command line tool for managing AWS ECS Clusters",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "eslint bin test lib index.js",
+    "test": "tape test/*.test.js | tap-spec"
+  },
+  "bin": {
+    "ecs-cluster-control": "bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tapaswenipathak/ecs-cluster-control.git"
+  },
+  "author": "Tapasweni Pathak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tapaswenipathak/ecs-cluster-control/issues"
+  },
+  "homepage": "https://github.com/tapaswenipathak/ecs-cluster-control#readme",
+  "devDependencies": {
+    "aws-ecs-clusters": "^1.0.2",
+    "aws-ecs-monitors": "^1.0.5",
+    "aws-mock-aws-sdk-js": "0.0.5",
+    "easy-table": "^1.1.1",
+    "eslint": "^4.11.0",
+    "eslint-plugin-node": "^5.2.1",
+    "meow": "^4.0.0",
+    "simple-statistics": "^5.2.1",
+    "sinon": "^4.5.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.8.0"
+  }
+}
