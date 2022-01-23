@@ -1,0 +1,17 @@
+---
+layout: "base.njk"
+permalink: 
+    bejamas: "/bejamas/"
+---
+
+<a href="Home">Home</a>
+
+<h2>Information</h2>
+{% assign name = "bejamas" %}
+{% assign results = name | horoscopeAPIList %}
+<div class="card-grid">
+  {% for result in results %}
+    <h1>{{ result.name }}</h1>
+  {% endfor %}
+</div>
+

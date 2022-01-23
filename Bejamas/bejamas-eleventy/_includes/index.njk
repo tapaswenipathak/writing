@@ -1,0 +1,17 @@
+---
+title: "Bejamas Eleventy"
+layout: "base.njk"
+permalink:
+    build: "/"
+---
+{% set pageTitle %}
+    {% if eleventy.serverless.path.title %}
+        {{ eleventy.serverless.query.query | safe }}
+    {% else %}
+        {{ title }}
+    {% endif %}
+{% endset %}
+<h1>{{ pageTitle }}</h1>
+
+<button onclick="window.location.href = '/bejamas/'" id="bejamasForm"> Bejamas Eleventy Horoscope API Explorer</button>
+
