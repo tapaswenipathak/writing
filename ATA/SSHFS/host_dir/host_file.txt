@@ -1,0 +1,7 @@
+hi from remote,
+
+I'm creating a sample txt file in remote to see in host using sshfs mount directory.
+
+
+with ssh
+sshfs!
