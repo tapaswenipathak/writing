@@ -1,0 +1,32 @@
+{
+  "name": "video-streaming-server",
+  "version": "1.0.0",
+  "description": "How to create a Video Streaming Server in Node.js",
+  "main": "index.js",
+  "scripts": {
+	"start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tapaswenipathak/writing.git#main"
+  },
+  "keywords": [
+    "100ms",
+    "nodejs",
+    "video",
+    "streaming",
+    "server"
+  ],
+  "author": "Tapasweni Pathak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tapaswenipathak/writing/issues"
+  },
+  "homepage": "https://github.com/tapaswenipathak/writing/tree/main#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "nodeman": "^1.1.2"
+  }
+}
